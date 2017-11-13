@@ -14,7 +14,6 @@ public class Main {
                 for (int i = 1; i<=n; i++){
                     factorial *=i;
                 }
-
             }
 
             return factorial;
@@ -25,10 +24,11 @@ public class Main {
         BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
 
         System.out.println (" dame un valor a calcular su factorial :");
-        int n = Integer.parseInt (br.readLine ());
+        int n ;
         do {
+             n = Integer.parseInt (br.readLine ());
             System.out.println (" El factorial es : "+calcularFactorial (n));
-        }while (!(n>=0));
+        }while ((n>=0));
 
     }
 }
