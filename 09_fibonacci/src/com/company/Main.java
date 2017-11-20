@@ -18,6 +18,20 @@ public class Main {
         }
     }
 
+    public static int fibIterativo(int n){
+
+          int a = 0;
+          int b = 1;
+          int c;
+
+        for (int k = 0; k<n; k++){
+
+              c = b+a;
+              a=b;
+              b=c;
+        }
+        return a;
+    }
     public static void main(String[] args) throws IOException {
 
 
@@ -27,6 +41,7 @@ public class Main {
         System.out.print ("  give me number please : ");
        int n = Integer.parseInt (br.readLine ());
         System.out.println (" sucesiones de fibonnacci : "+fibonnacci (n));
+        System.out.println (" sucesiones de fibonnacci : "+fibIterativo (n));
 
 
 
